@@ -102,6 +102,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProveedoresFmr.resx">
+      <DependentUpon>ProveedoresFmr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TecnicosFrm.resx">
+      <DependentUpon>TecnicosFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

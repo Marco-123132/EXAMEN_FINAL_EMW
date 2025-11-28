@@ -199,7 +199,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(758, 451);
+            this.splitContainer1.Size = new System.Drawing.Size(758, 490);
             this.splitContainer1.SplitterDistance = 314;
             this.splitContainer1.TabIndex = 14;
             // 
@@ -214,7 +214,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(440, 451);
+            this.dataGridView1.Size = new System.Drawing.Size(440, 490);
             this.dataGridView1.TabIndex = 0;
             // 
             // button1
@@ -264,6 +264,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "EquiposFrm";
             this.Text = "EquiposFrm";
+            this.Load += new System.EventHandler(this.EquiposFrm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
