@@ -87,5 +87,12 @@ namespace WindowsFormsApp1
             frm.MdiParent = this;  //lo abre dentro del formulario principal
             frm.Show();
         }
+
+        private void marcas_Click(object sender, EventArgs e)
+        {
+            MarcasFrm frm = new MarcasFrm();
+            frm.MdiParent = this; 
+            frm.Show();
+        }
     }
 }

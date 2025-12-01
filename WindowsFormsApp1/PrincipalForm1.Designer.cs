@@ -41,6 +41,7 @@
             this.toolsResponsables = new System.Windows.Forms.ToolStripButton();
             this.toolsTransferencias = new System.Windows.Forms.ToolStripButton();
             this.toolsTipoEquipo = new System.Windows.Forms.ToolStripButton();
+            this.marcas = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +65,8 @@
             this.toolsBajas,
             this.toolsResponsables,
             this.toolsTransferencias,
-            this.toolsTipoEquipo});
+            this.toolsTipoEquipo,
+            this.marcas});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1073, 25);
@@ -161,6 +163,15 @@
             this.toolsTipoEquipo.Text = "Tipo_Equipo";
             this.toolsTipoEquipo.Click += new System.EventHandler(this.toolsTipoEquipo_Click);
             // 
+            // marcas
+            // 
+            this.marcas.Image = ((System.Drawing.Image)(resources.GetObject("marcas.Image")));
+            this.marcas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.marcas.Name = "marcas";
+            this.marcas.Size = new System.Drawing.Size(65, 22);
+            this.marcas.Text = "Marcas";
+            this.marcas.Click += new System.EventHandler(this.marcas_Click);
+            // 
             // PrincipalForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -193,6 +204,7 @@
         private System.Windows.Forms.ToolStripButton toolsResponsables;
         private System.Windows.Forms.ToolStripButton toolsTransferencias;
         private System.Windows.Forms.ToolStripButton toolsTipoEquipo;
+        private System.Windows.Forms.ToolStripButton marcas;
     }
 }
 
