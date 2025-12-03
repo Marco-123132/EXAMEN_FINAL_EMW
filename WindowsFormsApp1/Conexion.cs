@@ -10,12 +10,12 @@ namespace WindowsFormsApp1
 {
     internal class Conexion
     {
-       SqlConnection connection = new SqlConnection(" Database=inventario_de_equipos informaticos;Data Source=192.168.10.2;UserId=sa;Password=Hyp3r10nPr0_;TrustServerCertificate=True");
-        public SqlConnection AbrirConexion()
+       SqlConnection connection = new SqlConnection("Database=inventario_de equipos informaticos;Data Source=172.16.0.20;User Id=sa;Password=Hyp3r10nPr0_;TrustServerCertificate=True");
+        public SqlConnection Conectar()
         {
             try
             {
-                if (connection.State == System.Data.ConnectionState.Closed)
+                if (connection.State != System.Data.ConnectionState.Open)
                 {
                     connection.Open();
                     MessageBox.Show("Conexión abierta correctamente.");
@@ -27,7 +27,7 @@ namespace WindowsFormsApp1
             }
             return connection;
         }
-        public SqlConnection CerrarConexion()
+        public SqlConnection Desconectar()
         {
             try
             {

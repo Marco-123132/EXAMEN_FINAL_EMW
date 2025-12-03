@@ -127,6 +127,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "MarcasFrm";
             this.Text = "MarcasFrm";
+            this.Load += new System.EventHandler(this.MarcasFrm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

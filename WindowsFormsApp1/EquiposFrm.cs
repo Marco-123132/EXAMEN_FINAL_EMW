@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Modelos;
 
 namespace WindowsFormsApp1
 {
     public partial class EquiposFrm : Form
     {
+        int EquipoId = 0;
         public EquiposFrm()
         {
             InitializeComponent();
@@ -34,7 +36,12 @@ namespace WindowsFormsApp1
 
         private void EquiposFrm_Load(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = Equipo.Obtener();
+            if(dataGridView1.Columns.Count >0)
+            {
+                dataGridView1.Columns["id"].Visible = false;
 
+            }
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
